@@ -21,8 +21,8 @@ describe('the setTimeout2 function', () => {
   it('should fire the callback only once when delay period has elapsed', () => {
     const callback = jest.fn()
     setTimeout2(callback, 100)
-    jest.advanceTimersByTime(50)
-    expect(callback).not.toHaveBeenCalled()
+    jest.advanceTimersByTime(150)
+    expect(callback).toHaveBeenCalled()
   })
 
   it('should ensure arguments are passed into the fired callback', () => {
