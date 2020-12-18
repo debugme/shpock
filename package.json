@@ -1,0 +1,33 @@
+{
+  "name": "shpock",
+  "version": "1.0.0",
+  "description": "An alternative setTimeout implementation",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Asad Razvi",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "eslint": "7.14.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "jest": "26.6.3",
+    "prettier": "2.2.0"
+  }
+}
