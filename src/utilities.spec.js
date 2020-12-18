@@ -29,7 +29,6 @@ describe('the setTimeout2 function', () => {
     const callback = jest.fn()
     setTimeout2(callback, 100, 'santa', 'claus')
     jest.advanceTimersByTime(100)
-    expect(callback).toHaveBeenCalled()
     expect(callback).toHaveBeenCalledWith('santa', 'claus')
   })
 
